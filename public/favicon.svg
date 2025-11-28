@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#006400" rx="15"/>
+  <g transform="translate(50, 50)">
+    <!-- Ka'bah representation -->
+    <rect x="-20" y="-5" width="40" height="25" fill="#1a1a1a" stroke="#D4AF37" stroke-width="2"/>
+    <rect x="-18" y="-3" width="36" height="3" fill="#D4AF37"/>
+    <rect x="-18" y="7" width="36" height="3" fill="#D4AF37"/>
+    <rect x="-18" y="17" width="36" height="3" fill="#D4AF37"/>
+    
+    <!-- Crescent Moon -->
+    <g transform="translate(0, -28)">
+      <circle cx="0" cy="0" r="8" fill="#D4AF37"/>
+      <circle cx="3" cy="-1" r="7" fill="#006400"/>
+    </g>
+    
+    <!-- Star -->
+    <path transform="translate(15, -28) scale(0.4)" d="M 0,-10 L 2.9,-3.1 L 9.5,-2.4 L 4.8,2.4 L 5.9,9.5 L 0,6.2 L -5.9,9.5 L -4.8,2.4 L -9.5,-2.4 L -2.9,-3.1 Z" fill="#D4AF37"/>
+  </g>
+</svg>
