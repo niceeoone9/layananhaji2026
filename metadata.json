@@ -1,0 +1,7 @@
+{
+  "name": "Layanan Haji Gorontalo 2026",
+  "description": "Portal Resmi Layanan Haji & Umrah Kota Gorontalo Tahun 2026. Informasi Jemaah, Regulasi, dan Petugas.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
