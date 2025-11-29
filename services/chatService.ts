@@ -33,14 +33,8 @@ export const sendMessage = async (message: string): Promise<string> => {
   try {
     const response: GenerateContentResponse = await chatSession.sendMessage({ message });
     return response.text || "Maaf, saya tidak dapat memproses permintaan Anda saat ini.";
-  } catch (error: any) {
+  } catch (error) {
     console.error("Chat Error:", error);
-    
-    // Handle rate limit error
-    if (error?.message?.includes('429') || error?.message?.includes('quota') || error?.message?.includes('RESOURCE_EXHAUSTED')) {
-      return "Maaf, sistem sedang sibuk karena banyak permintaan. Mohon tunggu 1-2 menit lalu coba lagi. Terima kasih atas kesabarannya.";
-    }
-    
     return "Terjadi kesalahan pada sistem AI. Silakan coba lagi nanti.";
   }
 };
