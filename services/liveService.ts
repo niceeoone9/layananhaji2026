@@ -85,7 +85,7 @@ export const startLiveSession = async (
     activeStream = await navigator.mediaDevices.getUserMedia({ audio: true });
 
     sessionPromise = ai.live.connect({
-      model: 'gemini-1.5-pro',
+      model: 'gemini-2.5-flash-native-audio-preview-09-2025',
       callbacks: {
         onopen: () => {
           onConnect();
