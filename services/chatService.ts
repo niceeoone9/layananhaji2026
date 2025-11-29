@@ -14,7 +14,7 @@ export const initChat = async () => {
   
   const ai = getClient();
   chatSession = ai.chats.create({
-    model: 'gemini-2.5-flash',
+    model: 'gemini-1.5-flash',
     config: {
       systemInstruction: FULL_SYSTEM_INSTRUCTION,
     },
